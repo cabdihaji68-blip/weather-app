@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Pro To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="app-card">
+            <h2><i class="fa-solid fa-list-check"></i> Ultimate Pro Tasks</h2>
+            
+            <!-- Sanduuqa Raadinta (Search Bar) -->
+            <div class="search-section">
+                <input type="text" id="search-input" placeholder="Ka dhex raadi hawlaha...">
+            </div>
+
+            <!-- Qaybta Wax Gelinta (Input Form) -->
+            <div class="input-section">
+                <input type="text" id="task-input" placeholder="Waa maxay hawshaada maanta?">
+                <button id="add-btn"><i class="fa-solid fa-plus"></i> Ku dar</button>
+            </div>
+
+            <!-- Qaybta Kala-saarista (Filter Tabs) -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Dhammaan</button>
+                <button class="filter-btn" data-filter="active">Socda</button>
+                <button class="filter-btn" data-filter="completed">Dhammaaday</button>
+            </div>
+
+            <!-- Tirakoobka Hawlaha -->
+            <div class="stats-container">
+                <p>Wadarta: <span id="total-tasks">0</span></p>
+                <p>Haray: <span id="pending-tasks">0</span></p>
+            </div>
+
+            <!-- Liiska Hawlaha -->
+            <ul id="task-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
